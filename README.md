@@ -86,6 +86,6 @@ composer install
 vendor/bin/phpunit
 ```
 
-18 tests. CI runs them on PHP 8.2, 8.3 and 8.4 with Laravel 12.
+17 tests. CI runs them on PHP 8.2, 8.3 and 8.4 with Laravel 12.
 
 For the design reasons, read [docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md).
