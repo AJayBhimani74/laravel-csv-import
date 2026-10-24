@@ -1,0 +1,20 @@
+<?php
+
+namespace {{ namespace }};
+
+use AjayBhimani\CsvImport\CsvImporter;
+
+class {{ class }} extends CsvImporter
+{
+    public function rules(): array
+    {
+        return [
+            // 'email' => ['required', 'email'],
+        ];
+    }
+
+    public function handle(array $row): void
+    {
+        //
+    }
+}
