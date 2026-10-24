@@ -44,7 +44,7 @@ Importing a CSV sounds trivial and is full of small traps: Excel files with hidd
 
 ## Testing a package
 
-The tests use **Orchestra Testbench**, which boots a small Laravel app inside the test run so the validator, facades and the artisan command work without a real project. CI runs the suite against Laravel 11 and 12 on PHP 8.2 and 8.3. I also installed the package into a fresh Laravel app from the local folder and imported a semicolon-separated file with capitalised headers, to check auto-discovery and the generator command for real.
+The tests use **Orchestra Testbench**, which boots a small Laravel app inside the test run so the validator, facades and the artisan command work without a real project. CI runs the suite on PHP 8.2, 8.3 and 8.4 with Laravel 12. I first tried to include Laravel 11 as well, but Composer refused to install any Laravel 11 release because of known security advisories, so I dropped it rather than turn the check off. I also installed the package into a fresh Laravel app from the local folder and imported a semicolon-separated file with capitalised headers, to check auto-discovery and the generator command for real.
 
 ## Questions you may get
 

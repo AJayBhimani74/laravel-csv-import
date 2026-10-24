@@ -13,7 +13,7 @@ composer config repositories.csv-import vcs https://github.com/AJayBhimani74/lar
 composer require ajaybhimani74/laravel-csv-import:dev-main
 ```
 
-Needs PHP 8.2+ and Laravel 11 or 12. The service provider is found automatically.
+Needs PHP 8.2+ and Laravel 12. Laravel 11 is not supported: all its releases are flagged by Composer's security advisories now. The service provider is found automatically.
 
 ## Use
 
@@ -86,6 +86,6 @@ composer install
 vendor/bin/phpunit
 ```
 
-18 tests. CI runs them on PHP 8.2 and 8.3 with Laravel 11 and 12.
+18 tests. CI runs them on PHP 8.2, 8.3 and 8.4 with Laravel 12.
 
 For the design reasons, read [docs/HOW-IT-WORKS.md](docs/HOW-IT-WORKS.md).
